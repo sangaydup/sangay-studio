@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{% block title %}Learn Designing with Sangay{% endblock %}</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Learn Designing <span>with Sangay</span></div>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/resume">Resume</a>
+    <a href="/contact" class="btn">Contact</a>
+  </nav>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div class="footer-col">
+<h2>Learn Designing <span>with Sangay</span></h2>
+<p>Premium design studio helping students build world-class portfolios, resumes, and presentation skills.</p>
+
+<div class="social-links">
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+
+<div class="footer-col">
+<h3>Services</h3>
+<ul>
+<li><a href="#">Resume Design</a></li>
+<li><a href="#">Presentation Design</a></li>
+<li><a href="#">Design Coaching</a></li>
+<li><a href="#">Portfolio Building</a></li>
+</ul>
+</div>
+
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/about">About</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/portfolio">Portfolio</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Learn Designing with Sangay • All Rights Reserved
+</div>
+
+</footer>
+
+</body>
+</html>
